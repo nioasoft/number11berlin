@@ -1,0 +1,50 @@
+{
+  "pages": {
+    "/_app": [
+      "static/chunks/a9c8a_next_dist_compiled_999f5db2._.js",
+      "static/chunks/a9c8a_next_dist_shared_lib_ef78c7cd._.js",
+      "static/chunks/a9c8a_next_dist_client_334c1b28._.js",
+      "static/chunks/a9c8a_next_dist_1d556217._.js",
+      "static/chunks/a9c8a_next_app_de135355.js",
+      "static/chunks/[next]_entry_page-loader_ts_f4e2be9f._.js",
+      "static/chunks/a9c8a_react-dom_68d87410._.js",
+      "static/chunks/a9c8a_41f246b2._.js",
+      "static/chunks/[root-of-the-server]__ed2e07e6._.js",
+      "static/chunks/number11_number11-website_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-number11_number11-website_pages__app_e1b29ccf._.js"
+    ],
+    "/_error": [
+      "static/chunks/a9c8a_next_dist_compiled_999f5db2._.js",
+      "static/chunks/a9c8a_next_dist_shared_lib_cdc86744._.js",
+      "static/chunks/a9c8a_next_dist_client_334c1b28._.js",
+      "static/chunks/a9c8a_next_dist_51033f47._.js",
+      "static/chunks/a9c8a_next_error_3e739be3.js",
+      "static/chunks/[next]_entry_page-loader_ts_73453a18._.js",
+      "static/chunks/a9c8a_react-dom_68d87410._.js",
+      "static/chunks/a9c8a_41f246b2._.js",
+      "static/chunks/[root-of-the-server]__195d4124._.js",
+      "static/chunks/number11_number11-website_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-number11_number11-website_pages__error_e13b6264._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/ea31f_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_ssgManifest.js",
+    "static/development/_buildManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_e75f5c7c._.js",
+    "static/chunks/ea31f_next_dist_compiled_react-dom_a54cd489._.js",
+    "static/chunks/ea31f_next_dist_compiled_react-server-dom-turbopack_4172c908._.js",
+    "static/chunks/ea31f_next_dist_compiled_next-devtools_index_e5dd0b5b.js",
+    "static/chunks/ea31f_next_dist_compiled_ec4cc43e._.js",
+    "static/chunks/ea31f_next_dist_client_a9b7d9f2._.js",
+    "static/chunks/ea31f_next_dist_9484f556._.js",
+    "static/chunks/ea31f_@swc_helpers_cjs_3b647b2f._.js",
+    "static/chunks/number11_number11-website_a0ff3932._.js",
+    "static/chunks/turbopack-number11_number11-website_94d2f62a._.js"
+  ]
+}
