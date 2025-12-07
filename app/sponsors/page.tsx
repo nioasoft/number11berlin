@@ -38,9 +38,9 @@ export default function Sponsors() {
               ))}
             </ul>
           </div>
-           <div className="h-80 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10">
-              <span className="text-gray-600 font-mono text-sm">[Placeholder: Sponsor Integration Mockup]</span>
-           </div>
+          <div className="h-80 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10">
+            <img src="/sponsor-integration.webp" alt="Sponsor Integration Mockup" className="w-full h-full object-cover rounded-xl opacity-80" />
+          </div>
         </div>
       </section>
 
@@ -55,14 +55,14 @@ export default function Sponsors() {
               <p className="text-sm text-gray-400 mb-6 h-12">Naming rights, exclusive category rights, integrated branding in arena.</p>
               <button className="w-full py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition-colors">Contact Us</button>
             </div>
-            
+
             {/* Silver */}
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-gray-400 transition-all">
               <h3 className="text-2xl font-bold text-gray-300 mb-4 uppercase">Silver</h3>
               <p className="text-sm text-gray-400 mb-6 h-12">LED integration, bar-area branding, event takeovers.</p>
               <button className="w-full py-3 bg-transparent border border-gray-500 text-white font-bold rounded-lg hover:bg-white/10 transition-colors">Contact Us</button>
             </div>
-            
+
             {/* Bronze */}
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-gray-400 transition-all">
               <h3 className="text-2xl font-bold text-amber-700 mb-4 uppercase">Bronze</h3>

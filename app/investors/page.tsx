@@ -71,7 +71,7 @@ export default function Investors() {
           </div>
           <div className="h-[400px] bg-black rounded-xl flex items-center justify-center border border-white/10 relative">
             {/* Placeholder for Investor Chart/Presentation */}
-             <span className="text-gray-600 font-mono text-sm">[Placeholder: Investor Presentation Shot]</span>
+            <img src="/investor-presentation.webp" alt="Investor Presentation" className="w-full h-full object-cover rounded-xl opacity-80" />
           </div>
         </div>
       </section>

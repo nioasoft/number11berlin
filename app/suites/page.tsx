@@ -46,8 +46,8 @@ export default function Suites() {
             </div>
             <div className="h-[500px] bg-neutral-800 rounded-2xl flex items-center justify-center border border-white/10 relative overflow-hidden group">
               {/* Placeholder */}
+              <img src="/suite-interior.webp" alt="Luxury Private Suite Interior" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
-              <span className="relative z-20 text-gray-500 font-mono text-sm group-hover:text-yellow-500 transition-colors">[Placeholder: Luxury Private Suite Interior]</span>
             </div>
           </div>
         </div>

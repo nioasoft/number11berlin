@@ -39,7 +39,7 @@ export default function Experience() {
             </ul>
           </div>
           <div className="h-80 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10">
-             <span className="text-gray-600 font-mono text-sm">[Placeholder: Immersive Arena Wide Shot]</span>
+            <img src="/immersive-arena-wide.webp" alt="Immersive Arena Wide Shot" className="w-full h-full object-cover rounded-xl" />
           </div>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function Experience() {
       <section className="py-20 bg-neutral-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center lg:flex-row-reverse">
           <div className="order-last lg:order-first h-80 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10">
-             <span className="text-gray-600 font-mono text-sm">[Placeholder: Premium Bar Interior]</span>
+            <img src="/premium-bar-interior.webp" alt="Premium Bar Interior" className="w-full h-full object-cover rounded-xl" />
           </div>
           <div>
             <h2 className="text-3xl font-bold mb-6 text-yellow-500 uppercase tracking-wide">Premium Bar Experience</h2>
@@ -88,17 +88,17 @@ export default function Experience() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center text-white uppercase tracking-wide">Technology Behind the Magic</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-             {[
-               "Custom media servers",
-               "Multi-feed event switching",
-               "Immersive lighting system",
-               "Data-driven crowd management",
-               "Dynamic sound arrays"
-             ].map((tech, i) => (
-               <div key={i} className="bg-black border border-white/10 p-6 rounded-lg hover:border-yellow-500/50 transition-colors">
-                 <h3 className="text-white font-semibold text-lg">{tech}</h3>
-               </div>
-             ))}
+            {[
+              "Custom media servers",
+              "Multi-feed event switching",
+              "Immersive lighting system",
+              "Data-driven crowd management",
+              "Dynamic sound arrays"
+            ].map((tech, i) => (
+              <div key={i} className="bg-black border border-white/10 p-6 rounded-lg hover:border-yellow-500/50 transition-colors">
+                <h3 className="text-white font-semibold text-lg">{tech}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>

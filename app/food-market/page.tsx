@@ -8,19 +8,19 @@ export default function FoodMarket() {
     <div className="min-h-screen bg-black text-white">
       {/* Hero/Intro */}
       <section className="py-32 px-4 sm:px-6 lg:px-8 bg-neutral-900 relative overflow-hidden">
-         <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-           <div>
-             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-white uppercase">
-               Food Market
-             </h1>
-             <p className="text-xl text-gray-300 font-light leading-relaxed">
-               A curated market of Berlin and international flavors — operated by external vendors on a hybrid lease + revenue-share model.
-             </p>
-           </div>
-           <div className="h-64 md:h-80 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10">
-              <span className="text-gray-600 font-mono text-sm">[Placeholder: Food Market Hall]</span>
-           </div>
-         </div>
+        <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-white uppercase">
+              Food Market
+            </h1>
+            <p className="text-xl text-gray-300 font-light leading-relaxed">
+              A curated market of Berlin and international flavors — operated by external vendors on a hybrid lease + revenue-share model.
+            </p>
+          </div>
+          <div className="h-64 md:h-80 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10">
+            <img src="/food-market-hall.webp" alt="Food Market Hall" className="w-full h-full object-cover rounded-xl" />
+          </div>
+        </div>
       </section>
 
       {/* Operator Benefits */}
@@ -50,7 +50,7 @@ export default function FoodMarket() {
           <p className="text-lg text-gray-300 mb-12">
             We provide the infrastructure so you can focus on the food.
           </p>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left max-w-2xl mx-auto">
             {[
               "Built-out stall infrastructure",

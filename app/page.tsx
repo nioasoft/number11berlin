@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           {/* Placeholder for Hero Image 1 - Immersive Arena */}
           <div className="w-full h-full bg-gradient-to-b from-gray-900 via-black to-black opacity-90"></div>
-          <div className="absolute inset-0 bg-[url('/placeholder-arena.jpg')] bg-cover bg-center opacity-40 mix-blend-overlay"></div> 
+          <div className="absolute inset-0 bg-[url('/hero-arena.webp')] bg-cover bg-center opacity-40 mix-blend-overlay"></div> 
           {/* Since we don't have the image, we use a dark gradient and potentially a pattern if available */}
         </div>
         
