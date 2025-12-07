@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-gradient-to-b from-gray-900 via-black to-black opacity-90 absolute z-10"></div>
           <Image
-            src="/hall4.webp"
+            src="/pictures/hall4.webp"
             alt="Number 11 Arena"
             fill
             className="object-cover opacity-60 mix-blend-overlay"
@@ -63,21 +63,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-[80vh] md:h-[60vh]">
             <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
-              <Image src="/hall1.webp" alt="Main Arena View" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              <Image src="/pictures/hall1.webp" alt="Main Arena View" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
                 <h3 className="text-xl font-bold text-white">Cinematic Scale</h3>
               </div>
             </div>
             <div className="grid grid-rows-2 gap-4 h-full">
               <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
-                <Image src="/hall2.webp" alt="Arena Atmosphere" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/pictures/hall2.webp" alt="Arena Atmosphere" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
               <div className="grid grid-cols-2 gap-4 h-full">
                 <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
-                  <Image src="/hall3.webp" alt="Premium Seating" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <Image src="/pictures/hall3.webp" alt="Premium Seating" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
-                  <Image src="/hall4.webp" alt="Wide Angle View" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <Image src="/pictures/hall4.webp" alt="Wide Angle View" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
           {/* Feature 1: The Bar */}
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
             <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl skew-y-1 transform transition-all hover:skew-y-0">
-              <Image src="/bar.webp" alt="Premium Bar" fill className="object-cover" />
+              <Image src="/pictures/bar.webp" alt="Premium Bar" fill className="object-cover" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">World-Class Bar</h3>
@@ -110,7 +110,7 @@ export default function Home() {
           {/* Feature 2: Private Rooms (Reversed) */}
           <div className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20">
             <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl -skew-y-1 transform transition-all hover:skew-y-0">
-              <Image src="/privaterooms.webp" alt="Private Suites" fill className="object-cover" />
+              <Image src="/pictures/privaterooms.webp" alt="Private Suites" fill className="object-cover" />
             </div>
             <div className="w-full md:w-1/2 text-right md:text-left"> {/* Aligned text left for consistency or right for style? Kept left/standard for readability usually better, but let's try right aligned to match the zig zag? No, keep standard align for text but layout is reversed. */}
               <div className="md:text-right">
@@ -130,7 +130,7 @@ export default function Home() {
           {/* Feature 3: Food Court */}
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
             <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl skew-y-1 transform transition-all hover:skew-y-0">
-              <Image src="/foodcourt.webp" alt="Food Market" fill className="object-cover" />
+              <Image src="/pictures/foodcourt.webp" alt="Food Market" fill className="object-cover" />
             </div>
             <div className="w-full md:w-1/2">
               <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">The Food Market</h3>
