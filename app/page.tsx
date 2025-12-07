@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Number 11 Berlin — Immersive Sports Arena & Premium Hospitality at Sony Center",
@@ -7,17 +8,21 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          {/* Placeholder for Hero Image 1 - Immersive Arena */}
-          <div className="w-full h-full bg-gradient-to-b from-gray-900 via-black to-black opacity-90"></div>
-          <div className="absolute inset-0 bg-[url('/hero-arena.webp')] bg-cover bg-center opacity-40 mix-blend-overlay"></div> 
-          {/* Since we don't have the image, we use a dark gradient and potentially a pattern if available */}
+          <div className="w-full h-full bg-gradient-to-b from-gray-900 via-black to-black opacity-90 absolute z-10"></div>
+          <Image
+            src="/hall4.webp"
+            alt="Number 11 Arena"
+            fill
+            className="object-cover opacity-60 mix-blend-overlay"
+            priority
+          />
         </div>
-        
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-6 leading-tight">
             Number 11 Berlin — <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
@@ -47,34 +52,114 @@ export default function Home() {
 
       {/* The Vision Section */}
       <section className="py-24 bg-black relative border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 tracking-tight uppercase">The Vision</h2>
           <p className="mt-4 text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            Number 11 Berlin transforms live sports into a multi-sensory, cinematic experience. Designed for passionate fans, tourists, corporates and premium hospitality seekers — our venue blends cutting-edge technology with exceptional service and atmosphere.
+            Number 11 Berlin transforms live sports into a multi-sensory, cinematic experience. Designed for passionate fans, tourists, corporates and premium hospitality seekers.
           </p>
+        </div>
+
+        {/* Arena Gallery Grid */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-[80vh] md:h-[60vh]">
+            <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
+              <Image src="/hall1.webp" alt="Main Arena View" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
+                <h3 className="text-xl font-bold text-white">Cinematic Scale</h3>
+              </div>
+            </div>
+            <div className="grid grid-rows-2 gap-4 h-full">
+              <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
+                <Image src="/hall2.webp" alt="Arena Atmosphere" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              </div>
+              <div className="grid grid-cols-2 gap-4 h-full">
+                <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
+                  <Image src="/hall3.webp" alt="Premium Seating" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                </div>
+                <div className="relative h-full rounded-2xl overflow-hidden group border border-white/10">
+                  <Image src="/hall4.webp" alt="Wide Angle View" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* What Makes Us Different Section */}
-      <section className="py-24 bg-neutral-900/30 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center tracking-tight uppercase">What Makes Us Different</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {[
-              { title: "Immersive Arena", desc: "Giant curved projection surfaces & 4K/8K laser systems." },
-              { title: "Stadium-grade sound", desc: "Surround systems delivering true match energy." },
-              { title: "Premium bar", desc: "Signature cocktails, craft beers, curated spirits." },
-              { title: "10 Private Suites", desc: "VIP seating, dedicated service, guaranteed minimum spend." },
-              { title: "Food Market", desc: "Multiple vendors, external operators, revenue-sharing model." },
-              { title: "Central Location", desc: "Sony Center — one of Berlin’s most iconic destinations." }
-            ].map((item, index) => (
-              <div key={index} className="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-yellow-500/30 transition-colors group">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-yellow-500 transition-colors">{item.title}</h3>
-                <p className="text-gray-400 leading-relaxed">
-                  {item.desc}
+      {/* Features Zig-Zag Section */}
+      <section className="py-24 bg-neutral-950 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+
+          {/* Feature 1: The Bar */}
+          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+            <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl skew-y-1 transform transition-all hover:skew-y-0">
+              <Image src="/bar.webp" alt="Premium Bar" fill className="object-cover" />
+            </div>
+            <div className="w-full md:w-1/2">
+              <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">World-Class Bar</h3>
+              <p className="text-xl text-gray-400 mb-8 leading-relaxed">
+                Not just a sports bar, but a destination in itself. Featuring signature cocktails, craft beers from Berlin’s finest breweries, and a curated selection of spirits.
+              </p>
+              <ul className="space-y-4 text-gray-300">
+                <li className="flex items-center gap-3"><span className="w-2 h-2 bg-yellow-500 rounded-full"></span>Expert Mixology</li>
+                <li className="flex items-center gap-3"><span className="w-2 h-2 bg-yellow-500 rounded-full"></span>Premium Lounge Areas</li>
+                <li className="flex items-center gap-3"><span className="w-2 h-2 bg-yellow-500 rounded-full"></span>Late Night Atmosphere</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Feature 2: Private Rooms (Reversed) */}
+          <div className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20">
+            <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl -skew-y-1 transform transition-all hover:skew-y-0">
+              <Image src="/privaterooms.webp" alt="Private Suites" fill className="object-cover" />
+            </div>
+            <div className="w-full md:w-1/2 text-right md:text-left"> {/* Aligned text left for consistency or right for style? Kept left/standard for readability usually better, but let's try right aligned to match the zig zag? No, keep standard align for text but layout is reversed. */}
+              <div className="md:text-right">
+                <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">Private Suites</h3>
+                <p className="text-xl text-gray-400 mb-8 leading-relaxed">
+                  For the ultimate exclusive experience. 10 private suites offering VIP seating, dedicated service, and guaranteed privacy for corporate events or private parties.
                 </p>
+                <div className="flex flex-col md:items-end space-y-4 text-gray-300">
+                  <div className="flex items-center gap-3"><span className="w-2 h-2 bg-yellow-500 rounded-full md:order-2"></span> Minimum Spend Guarantee</div>
+                  <div className="flex items-center gap-3"><span className="w-2 h-2 bg-yellow-500 rounded-full md:order-2"></span> Dedicated Host</div>
+                  <div className="flex items-center gap-3"><span className="w-2 h-2 bg-yellow-500 rounded-full md:order-2"></span> Customizable Catering</div>
+                </div>
               </div>
-            ))}
+            </div>
+          </div>
+
+          {/* Feature 3: Food Court */}
+          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+            <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl skew-y-1 transform transition-all hover:skew-y-0">
+              <Image src="/foodcourt.webp" alt="Food Market" fill className="object-cover" />
+            </div>
+            <div className="w-full md:w-1/2">
+              <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">The Food Market</h3>
+              <p className="text-xl text-gray-400 mb-8 leading-relaxed">
+                A vibrant culinary marketplace featuring multiple vendors and external operators. From gourmet street food to refined dining options.
+              </p>
+              <Link href="/food">
+                <button className="px-8 py-3 border border-yellow-500/50 text-yellow-500 font-bold rounded-full hover:bg-yellow-500 hover:text-black transition-all">
+                  View Vendors
+                </button>
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Other Features Grid (Sound, Location) - Keep simple */}
+      <section className="py-20 bg-neutral-900/30 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-10 rounded-3xl bg-white/5 border border-white/10 hover:border-yellow-500/30 transition-all">
+              <h3 className="text-2xl font-bold text-white mb-4">Stadium-Grade Sound</h3>
+              <p className="text-gray-400">Engineered surround systems that deliver the true roar of the stadium. Feel every cheer and chant as if you were there.</p>
+            </div>
+            <div className="p-10 rounded-3xl bg-white/5 border border-white/10 hover:border-yellow-500/30 transition-all">
+              <h3 className="text-2xl font-bold text-white mb-4">Iconic Location</h3>
+              <p className="text-gray-400">Located in the heart of Berlin at the legendary Sony Center at Potsdamer Platz. Easily accessible and surrounded by history.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -82,7 +167,7 @@ export default function Home() {
       {/* Opening 2026 Section */}
       <section className="py-32 bg-gradient-to-b from-black to-neutral-900 text-center relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-           <span className="text-[20vw] font-bold text-white leading-none select-none">2026</span>
+          <span className="text-[20vw] font-bold text-white leading-none select-none">2026</span>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase">
